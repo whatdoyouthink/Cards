@@ -1,4 +1,4 @@
-from Classes import *
+import Classes
 import windows
 import pickle
 def changeTk(win1, win2):
@@ -7,7 +7,7 @@ def changeTk(win1, win2):
 	return 0
 
 def newDeck(name):
-	deck=Deck(name)
+	deck=Classes.Deck(name)
 	f = open("Date/date.pickle", "rb")
 	decks=pickle.load(f)
 	decks=pickle.loads(decks)
